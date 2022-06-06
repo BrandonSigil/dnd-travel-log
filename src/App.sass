@@ -2,19 +2,37 @@
 
 .App 
   text-align: center
+  
+  p
+    line-height: 1.4
 
 .header
   background: black
   width: 100
-  padding: .2rem
+  padding: .2rem 3rem
   border-bottom: 2px solid red
+  display: grid
+  grid-template-columns: 1fr 150px
+  align-items: center
+
+
+  button
+    font-size: 1.25rem
+    font-weight: 600
+    border: none
+    border-radius: 30px
+    padding: .35rem 1rem
+    color: white
+    background: #931414
 
   h1
     color: white
     font-size: 2rem
     font-family: 'Charis SIL', serif
     text-align: left
-    margin-left: 3rem
+
+h2
+  margin-bottom: -.25rem
 
 
 .App-logo 
@@ -58,28 +76,39 @@ button
 .card
   display: flex
   flex-direction: column
-  width: 45vw
-  max-width: 500px
+  max-width: 550px
   border-radius: 10px
   margin: 10px
   border: 1.5px solid #5c5c5c2d
 
 .card-container
-  display: flex
+  display: grid
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr
   justify-content: center
   align-items: center
+  padding: 3rem
+  max-width: 1600px
 
   .card-contents
     padding: .5rem 1rem
     text-align: left
-    height: 10vh
+    height: 275px
 
 .image-container
-  width: 100%
-  height: 8vh
-  background-size: cover
+  height: 250px
   background: grey
-  border-radius: 10px 10px 0 0 
+  border-radius: 10px 10px 0 0
+  object-fit: cover
 
   img
-    width: 200px
+    width: 100%
+    height: 100%
+    border-radius: 10px 10px 0 0 
+
+.location
+  font-size: .75rem
+  text-transform: uppercase
+  font-weight: 500
+  margin-bottom: -1rem
+  color: #000000b2
+  letter-spacing: .1rem
